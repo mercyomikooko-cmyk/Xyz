@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Excel Ventures</title>
+<meta name="description" content="Excel Ventures is a Lagos-based menswear house working in minimalist, dark luxury tones for the modern Nigerian man.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">Excel <span>Ventures</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header style="padding:90px 0 0;">
+  <div class="wrap">
+    <span class="mono">About the House</span>
+    <h1 style="margin-top:18px;font-size:clamp(2.2rem,5vw,3.6rem);">Built in Sumilere, <br>worn across Lagos.</h1>
+  </div>
+</header>
+
+<section class="reveal">
+  <div class="wrap about-top">
+    <div>
+      <p>Excel Ventures started from a simple irritation: most "luxury" menswear sold to Nigerian men was loud by default — heavy logos, bright colour blocking, more decoration than design.</p>
+      <p>We build the opposite. A dark, disciplined palette of cognac brown and sky blue, cut lines that respect the body, and fabric choices that hold up to Lagos heat without losing their shape by evening.</p>
+      <p>Every piece is designed and fitted from our base on Dunojaiye Street, Sumilere — close enough to the men we dress to adjust a sleeve the same week we cut it.</p>
+      <div class="swatches">
+        <div class="swatch" style="background:var(--sky);" title="Sky Blue"></div>
+        <div class="swatch" style="background:var(--brown);" title="Dark Brown"></div>
+        <div class="swatch" style="background:var(--bg-raised);border-color:var(--brown-light);" title="Espresso Black"></div>
+      </div>
+    </div>
+    <div class="chalk-vert" style="height:340px;justify-self:center;"></div>
+  </div>
+</section>
+
+<section class="bordered reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>How we fit a piece</h2>
+      <span class="mono">Process</span>
+    </div>
+    <div class="notes">
+      <div class="note">
+        <h3>Conversation</h3>
+        <p>We start by listening to how you actually move through your week — what you're dressing for, not just what you like the look of.</p>
+      </div>
+      <div class="note">
+        <h3>Measure</h3>
+        <p>A full set of measurements taken in person at Sumilere, recorded against your name for every future order.</p>
+      </div>
+      <div class="note">
+        <h3>Cut &amp; Construct</h3>
+        <p>Pattern drafted to your frame, cut by hand, and assembled by our tailoring team over one to two weeks.</p>
+      </div>
+      <div class="note">
+        <h3>Fit &amp; Finish</h3>
+        <p>A final fitting before the piece leaves the house — adjusted on the spot until the line sits right.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bordered reveal">
+  <div class="wrap" style="text-align:center;">
+    <h2 style="font-size:clamp(1.8rem,4vw,2.6rem);max-width:24ch;margin:0 auto;">Dress for the room you're walking into, not the one you left.</h2>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:34px;display:inline-block;">Get in Touch</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span class="mono">&copy; <span id="year"></span> Excel Ventures</span>
+    <span class="mono">No 43 Dunojaiye Street, Sumilere</span>
+  </div>
+</footer>
+
+<script src="dist/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

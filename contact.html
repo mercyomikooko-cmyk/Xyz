@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Excel Ventures</title>
+<meta name="description" content="Book a fitting or get in touch with Excel Ventures at No 43 Dunojaiye Street, Sumilere, Lagos.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">Excel <span>Ventures</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header style="padding:90px 0 0;">
+  <div class="wrap">
+    <span class="mono">Get in Touch</span>
+    <h1 style="margin-top:18px;font-size:clamp(2.2rem,5vw,3.6rem);">Let's fit you in.</h1>
+  </div>
+</header>
+
+<section class="reveal">
+  <div class="wrap contact-grid">
+    <div class="contact-list">
+      <div class="contact-block">
+        <span class="mono">Visit</span>
+        <h3>The House</h3>
+        <p>No 43 Dunojaiye Street,<br>Sumilere, Lagos, Nigeria</p>
+      </div>
+      <div class="contact-block">
+        <span class="mono">Call / WhatsApp</span>
+        <h3>Speak to Us</h3>
+        <p><a href="tel:+2348039396852">+234 803 939 6852</a></p>
+      </div>
+      <div class="contact-block">
+        <span class="mono">Hours</span>
+        <h3>Fitting Hours</h3>
+        <p>Monday – Saturday, 9am – 6pm<br>Closed Sundays</p>
+      </div>
+    </div>
+
+    <div>
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="message">What are you looking for?</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span class="mono">&copy; <span id="year"></span> Excel Ventures</span>
+    <span class="mono">No 43 Dunojaiye Street, Sumilere</span>
+  </div>
+</footer>
+
+<script src="dist/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
